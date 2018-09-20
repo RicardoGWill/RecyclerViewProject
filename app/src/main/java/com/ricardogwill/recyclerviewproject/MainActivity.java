@@ -111,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int position  = Integer.parseInt(insertEditText.getText().toString());
                 if (position > 0) {
-                    insertItem(position - 1); // The "insertItem()" method is defined below.
+                    insertItem(position - 1); // The "insertItem()" method is defined elsewhere.
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter a positive number.", Toast.LENGTH_SHORT).show();
                 }
@@ -124,7 +124,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 int position  = Integer.parseInt(removeEditText.getText().toString());
                 if (position > 0) {
-                    removeItem(position - 1); // The "removeItem()" method is defined below.
+                    removeItem(position - 1); // The "removeItem()" method is defined elsewhere.
                 } else {
                     Toast.makeText(MainActivity.this, "Please enter a positive number.", Toast.LENGTH_SHORT).show();
                 }
